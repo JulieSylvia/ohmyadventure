@@ -1,0 +1,735 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**@Fonts Here**/
+@font-family {
+    font-family: 'Louis George Cafe';
+    src: url('../fonts/LouisGeorgeCafe.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+@font-family {
+	font-family: 'Authentic';
+	src: url('../fonts/Authentic-Signature.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Authentic';
+    src: url('../fonts/Authentic-Signature.woff2') format('woff2'),
+        url('../fonts/Authentic-Signature.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Photoshoot';
+	src: url('../fonts/Photoshoot-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
+}
+
+/**** Custom Styles Begin Here  ****/
+
+html {
+	font-size: medium;
+}
+
+body {
+	
+	font-family: "Louis George Cafe", sans-serif;
+
+}
+
+#logo span {
+	font-weight: bold;
+	font-size: 1.1em;
+	color: white;
+	text-decoration: none;
+	font-family: "Authentic", sans-serif;
+	
+}
+
+
+#logo {
+	font-size: 1.8rem;
+
+	
+	color: white;
+	
+}
+
+
+
+#tigers header {
+	background-image: url("../img/tigers-header-1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 480px;
+	background-size: 100%;
+}
+
+
+	
+
+.top-bar {
+	
+	background: black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	align-items: baseline;
+	
+}
+
+#homepage header {
+	
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	list-style: none;
+	text-decoration: none;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#homepage ul {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 400px;
+	
+}
+
+.top-bar a {
+	
+	color: white;
+	text-decoration: none;
+	
+}
+
+
+
+.baby-nav-list li{
+	
+	list-style: none;
+	
+	text-decoration: none;
+	white-space: nowrap;
+	background-color: black;
+	padding: 0px 5px;
+	height: 0;
+    transition: all 1s;
+	overflow: hidden;
+}
+
+.relative-membership:hover .baby-nav-list li {
+	
+	padding: 8px;
+	height: auto;
+	white-space: no-wrap;
+	y-index: 40;
+	
+}
+
+.baby-nav-list li:first-child {
+
+	
+    
+}
+
+.baby-nav-list li:last-child {
+
+    
+}
+
+
+.baby-nav-list {
+
+position: absolute;
+top: 20px;
+left: -5px;
+	
+}
+
+
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+nav > ul{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.top-nav li {
+	padding-right: 65px;
+
+}
+
+.top-nav li:last-child {
+	padding-right: 5px;
+
+}
+
+#homepage nav ul{
+	
+	display: flex;
+	justify-content: center;
+	
+}
+
+
+header li {
+	
+	text-align: center;
+}
+
+
+footer li{
+	display: inline;
+}
+
+footer p {
+	
+display: block;
+}
+
+.relative-membership {
+	position: relative;
+}
+
+#homepage nav {
+	padding: 20px 10px;
+}
+
+#homepage li {
+	 padding: 20px;
+	 text-align: center;
+}
+
+
+#tigers h1 {
+font-size: 3.5em;
+font-family: "Authentic";
+padding-bottom: 65px;
+padding-top: 65px;  
+
+}
+
+#tigers main p {
+	text-align: left;
+	
+	text-wrap: balance;
+	padding: 0px;
+	line-height: 2.5em
+}
+
+main {
+	padding-left: 50px;
+	padding-bottom: 50px;
+	padding-right: 50px;
+	width: 64%;	
+	box-sizing: border-box;
+
+}
+
+#homepage main {
+	width: 100%;
+	
+}
+
+aside {
+	width: 34%;
+	padding-top: 20px;
+}
+
+h1 {
+	background-image: url("../img/orange-swash.png");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	display: inline-block;
+	line-height: 1.25px;
+}
+
+#tigers h2{
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-top: 1.8em; 
+	padding-bottom: 1.8em;
+	font-weight: bold;
+	text-transform: uppercase;
+	
+}
+
+#tigers .adventures h2 {
+	text-align: center;
+	color: white;
+	padding: 15px;
+	background-color: black;
+	text-transform: uppercase;
+	
+
+}
+
+#lions .adventures h2 {
+	text-align: center;
+	color: white;
+	padding: 15px;
+	background-color: black;
+	text-transform: uppercase;
+	
+
+}
+
+
+.adventures {
+	color: white;
+	background-color: #FD4902;
+	font-size: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	text-wrap: wrap;
+	
+	
+}
+
+.adventures li, a {
+	text-decoration: none;
+	color: #000;
+	
+	
+	
+}
+
+.adventures li {
+	padding-left: 30px;
+	padding-bottom: 15px;
+}
+
+.adventures ul {
+	padding: 20px;
+	
+	
+}
+
+.img-left {
+	float: left;
+	margin-right: 15px;
+}
+
+
+
+
+
+footer {
+
+	background-color: black;
+	color: white;
+	display: block;
+	text-align: center;
+	font-size: 1em;
+
+
+}
+ 
+#tigers img:last-child {
+	padding-top: 25px;
+
+}
+
+.treeclimb {
+	
+	width:  1000px;
+}
+
+#lions header {
+	background-image: url("../img/lions-header.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 480px;
+	background-size: 100%;
+	
+	
+}
+
+#lions h1 {
+	
+	font-weight: bold;
+	font-size: 3.5em;
+    font-family: "Authentic";
+    padding-bottom: 65px;
+    padding-top: 65px;
+}
+
+#shoe {
+	background-image: url("../img/home/Rock-Climbing-Shoe.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 480px;
+	background-position: center center;
+}
+
+#mountains {
+	background-image: url("../img/home/east-coast-hiking-trails-header-600.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 480px;
+	background-position: center center;
+	background-attachment: fixed;
+	
+}
+
+#mountains div {
+	padding: 20px 50px;
+	padding-top: 200px;
+}
+
+#shoe div {
+	padding: 20px 50px;
+	padding-top: 200px;
+	
+}
+
+#shoe p {
+	font-size: 2.5em;
+	color: white;
+	background:  rgba(0, 0, 0, 0.5);
+	padding: 25px 300px;
+	text-align: center;
+}
+
+#canoe div {
+	padding: 20px 50px;
+	padding-top: 200px;
+	
+}
+
+#canoe p {
+	font-size: 2.5em;
+	color: white;
+	background:  rgba(0, 0, 0, 0.5);
+	padding: 25px 300px;
+	text-align: center;
+	
+}
+
+#hang div {
+	padding: 20px 50px;
+	padding-top: 200px;
+	
+}
+
+#hang p {
+	font-size: 2.5em;
+	color: white;
+	background:  rgba(0, 0, 0, 0.5);
+	padding: 25px 300px;
+	text-align: center;
+}
+
+
+#mountains h1 {
+	display: flex;
+	justify-content: center;
+	font-size: 2.5em;
+	color: white;
+	background:  rgba(0, 0, 0, 0.5);
+	padding: 25px 300px;
+	
+	
+}
+
+#canoe {
+	background-image: url("../img/home/canoeing.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 480px;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+main, aside {
+	display: inline-block;
+	vertical-align: top
+	
+	
+}
+
+#hang {
+	background-image: url("../img/home/vista-los-suenos-zip-line-1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 480px;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.orange-part li {
+	background-image: url("../img/bk-checkmark.png");
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: 0px 3px;
+
+}
+
+
+adventures ul {
+	padding: 20px;
+}
+
+
+#contact header {
+	background-image: url("../img/contact-header.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 480px;
+	background-position: center center;
+	
+	
+}
+
+#contact #main-div {
+	display: flex;
+	align-items: space-between;
+}
+
+#whole > div {
+	
+	display: inline-block;
+	width: 32%;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+	
+
+
+#whole {
+	padding-top: 100px;
+	padding-left: 40px;
+	padding-bottom: 15px;
+}
+
+label, input {
+	display: block;
+}
+
+
+#contact-form {
+	
+	border: .1rem solid black;
+	font-size: 1em;
+	box-shadow: 10px 5px 5px black;
+	padding: 40px;
+}
+
+
+
+
+#maps {
+
+}
+
+#info {
+	padding-right: 100px;
+	padding-left: 100px;
+	line-height: 2.2em;
+}
+
+info p {
+	/*padding: 5px 20px;*/
+}
+
+
+iFrame {
+	
+	
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+.iframe-container {
+	position: relative;
+	overflow: hidden;
+	padding-top: 56%;
+	
+}
+
+
+.iframe-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+	height: 100%;
+	width: 100%;
+	
+}
+
+.modal {
+  display: none; /* Hidden by default */ 
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal form {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.show-menu img {
+	width: 30px;
+	
+}
+/*hide menu item*/
+.show-menu {
+	display: none;
+}
+/*hide checkbox*/
+nav input[type=checkbox]{
+	display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+	#tigers header {
+		height: 0;
+		padding-bottom: 36.67%;
+		background-position: 0 50px;
+		
+	}
+	
+	#tigers, #lions h1 {
+		line-height: 3em;
+	}
+	
+}/* 1200 end*/
+
+
+@media only screen and (max-width: 767px){
+		
+	.show-menu {
+		display: block;
+	}
+	
+	.top-nav {
+		display: block;
+		position: relative;
+		
+	}
+	
+	.top-nav > ul {
+		position: absolute;
+		display: block;
+		right: 9000px;
+		transition: right
+	}
+	
+	nav input[type=checkbox]:checked + ul {
+		display: block;
+		right: 0;
+	}
+	
+	#tigers, #lions h1 {
+		line-height: 3em;
+	}
+	
+} /*end 767 */
+
+	
+
+
